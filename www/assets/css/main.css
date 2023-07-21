@@ -44,3 +44,11 @@ button{
   border:unset;
   cursor:pointer;
 }
+
+.msg {
+  border: 2px solid rgb(255, 60, 0);
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}

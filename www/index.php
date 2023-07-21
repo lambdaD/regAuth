@@ -15,6 +15,9 @@
     <p>
       <span>У вас нет аккаунта? <a href="reg.php">Зарегистрируйтесь.</a></span>
     </p>
+    <p>
+      <span class="msg">some msg</span>
+    </p>
   </form>
   
 </body>

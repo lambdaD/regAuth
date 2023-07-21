@@ -25,7 +25,10 @@
     <p>
       <span>Уже есть аккаунт? <a href="index.php">Войдите.</a></span>
     </p>
+    <p class="msg">
+      some dmsg
+    </p>
   </form>
-  
+
 </body>
 </html>
