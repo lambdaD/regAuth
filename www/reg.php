@@ -7,10 +7,10 @@
 </head>
 <body>
   <form action="" method="post">
+  <label for="">Имя</label>
+    <input type="text" placeholder="Введите своё имя">
     <label for="">Фамилия</label>
     <input type="text" placeholder="Введите свою фамилию">
-    <label for="">Имя</label>
-    <input type="text" placeholder="Введите своё имя">
     <label for="">Логин</label>
     <input type="text" placeholder="Введите свой логин">
     <label for="">Email</label>
