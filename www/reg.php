@@ -6,7 +6,7 @@
   <title>Авторизация и регистрация</title>
 </head>
 <body>
-  <form action="" method="post">
+  <form action="" method="post" enctype='multipart/form-data'>
   <label for="">Имя</label>
     <input type="text" placeholder="Введите своё имя">
     <label for="">Фамилия</label>
