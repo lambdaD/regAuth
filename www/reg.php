@@ -6,21 +6,21 @@
   <title>Авторизация и регистрация</title>
 </head>
 <body>
-  <form action="" method="post" enctype='multipart/form-data'>
-  <label for="">Имя</label>
-    <input type="text" placeholder="Введите своё имя">
-    <label for="">Фамилия</label>
-    <input type="text" placeholder="Введите свою фамилию">
-    <label for="">Логин</label>
-    <input type="text" placeholder="Введите свой логин">
-    <label for="">Email</label>
-    <input type="email" placeholder="Введите свой Email">
-    <label for="">Пароль</label>
-    <input type="password" placeholder="Введите свой пароль">
-    <label for="">Повторите пароль</label>
-    <input type="password" placeholder="Повторите пароль">
-    <label for="">Изображение профиля</label>
-    <input type="file">
+  <form action="vendor/signup.php" method="post" enctype='multipart/form-data'>
+    <label for="firstName">Имя</label>
+    <input name="firstName" type="text" placeholder="Введите своё имя">
+    <label for="secondName">Фамилия</label>
+    <input name="secondName" type="text" placeholder="Введите свою фамилию">
+    <label for="login">Логин</label>
+    <input name="login" type="text" placeholder="Введите свой логин">
+    <label for="email">Email</label>
+    <input name="email" type="email" placeholder="Введите свой Email">
+    <label for="password">Пароль</label>
+    <input name="password" type="password" placeholder="Введите свой пароль">
+    <label for="confirmPassword">Повторите пароль</label>
+    <input name="confirmPassword" type="password" placeholder="Повторите пароль">
+    <label for="avatar">Изображение профиля</label>
+    <input name="avatar" type="file">
     <button>Зарегистрироваться</button>
     <p>
       <span>Уже есть аккаунт? <a href="index.php">Войдите.</a></span>
