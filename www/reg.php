@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +29,15 @@
     <p>
       <span>Уже есть аккаунт? <a href="index.php">Войдите.</a></span>
     </p>
-    <p class="msg">
-      some dmsg
-    </p>
+    
+<?
+  if($_SESSION[message]){
+    echo('<p class="msg">'.$_SESSION[message].'</p>');
+  }
+        unset($_SESSION[message]);
+      
+?>
+    
   </form>
 
 </body>
