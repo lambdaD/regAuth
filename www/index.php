@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +19,12 @@
     <p>
       <span>У вас нет аккаунта? <a href="reg.php">Зарегистрируйтесь.</a></span>
     </p>
-
+    <?php
+    if ($_SESSION[message]) {
+      echo('<p class="msg">'.$_SESSION[message].'</p>');
+    }
+    unset($_SESSION[message])
+    ?>
   </form>
   
 </body>
