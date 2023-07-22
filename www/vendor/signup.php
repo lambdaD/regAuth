@@ -16,6 +16,8 @@
       header('Location: ../reg.php');
     }
 
+    $password = md5($password);
+
     mysqli_query($connect, "INSERT INTO `users`(`first_name`, `second_name`, `email`, `login`, `password`, `avatar`) VALUES ('$firstName','$secondName','$email','$login','$password', '$path')");
 
     $_SESSION[message] = 'Регистрация прошла успешно.';
