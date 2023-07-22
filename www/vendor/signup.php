@@ -10,11 +10,16 @@
 
   if ($password === $confirmPassword){
     $path = 'uploads/'.time().$_FILES['avatar']['name'];
-    
+
     if (!move_uploaded_file($_FILES['avatar']['tmp_name'], '../'.$path)) {
       $_SESSION[message] = 'Ошибка при загрузке изображения';
       header('Location: ../reg.php');
     }
+
+    mysqli_query($connect, "INSERT INTO `users`(`first_name`, `second_name`, `email`, `login`, `password`, `avatar`) VALUES ('$firstName','$secondName','$email','$login','$password', '$path')");
+
+    $_SESSION[message] = 'Регистрация прошла успешно.';
+    header('Location: ../index.php');
     
   }
   else{
