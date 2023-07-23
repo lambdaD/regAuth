@@ -14,6 +14,7 @@ session_start();
   <img src="<?= $_SESSION['user']['avatar'];?>" alt="1"/>
   <h2><?= $_SESSION['user']['first_name'].' '.$_SESSION['user']['second_name'];?></h2>
   <a href="#"><?= $_SESSION['user']['email'];?></a>
+  <a href="vendor/logout.php" class="logout">Выход</a>
   </form>
   
 </body>

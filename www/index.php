@@ -19,6 +19,7 @@ session_start();
     <p>
       <span>У вас нет аккаунта? <a href="reg.php">Зарегистрируйтесь.</a></span>
     </p>
+
     <?php
     if ($_SESSION[message]) {
       echo('<p class="msg">'.$_SESSION[message].'</p>');
