@@ -25,7 +25,7 @@
     <input name="confirmPassword" type="password" placeholder="Повторите пароль">
     <label for="avatar">Изображение профиля</label>
     <input name="avatar" type="file">
-    <button>Зарегистрироваться</button>
+    <button type="submit">Зарегистрироваться</button>
     <p>
       <span>Уже есть аккаунт? <a href="index.php">Войдите.</a></span>
     </p>
