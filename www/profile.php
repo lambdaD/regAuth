@@ -34,15 +34,7 @@ if (!$_SESSION[user]) {
       echo "<p>" . $fetchPost['content'] . "</p>";
       echo "<p>Дата создания: " . $fetchPost['created_at'] . "</p>";
    }
-    // $stmt = $pdo->prepare($sql);
-    // $stmt->execute([$user_id]);
-    // $posts = $stmt->fetchAll();
 
-    // // Выводим все записи пользователя
-    // foreach ($posts as $post) {
-    //   echo "<p>" . $post["content"] . "</p>";
-    //   echo "<p>Дата создания: " . $post["created_at"] . "</p>";
-    // }
     ?>
 
   </div>
