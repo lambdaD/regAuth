@@ -10,7 +10,7 @@ if (!$_SESSION[user]) {
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="assets/css/main.css">
-  <title>Авторизация и регистрация</title>
+  <title><?=($_SESSION["user"]["first_name"].' '.$_SESSION["user"]["second_name"])?></title>
 </head>
 <body>
   <form method="POST" action="vendor/create_post.php">
