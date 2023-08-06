@@ -13,10 +13,12 @@ if (!$_SESSION[user]) {
   <title>Авторизация и регистрация</title>
 </head>
 <body>
-  <form>
+  <form method="POST" action="vendor/create_post.php">
   <img src="<?= $_SESSION['user']['avatar'];?>" alt="1"/>
   <h2><?= $_SESSION['user']['first_name'].' '.$_SESSION['user']['second_name'];?></h2>
   <a href="#"><?= $_SESSION['user']['email'];?></a>
+  <textarea name="content" rows="4" cols="50" placeholder="Введите вашу запись"></textarea>
+  <button type="submit">Создать запись</button>
   <a href="vendor/logout.php" class="logout">Выход</a>
   </form>
   
