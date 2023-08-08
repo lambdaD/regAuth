@@ -92,7 +92,7 @@
       height: 100%;
     }
     #middle #up #infoprofile1 #infoprofile2{
-      background-color: rgb(73, 26, 134);
+      background-color: #ffffff;
       width: 100%;
       height: 100px;
       position: absolute;
@@ -101,24 +101,58 @@
       z-index: 1;
     }
     #middle #up #infoprofile1 #infoprofile3{
-      background-color: #dce1e6;
+      
       position: absolute;
       width: 100%;
       height: 220px;
-      bottom: 25px;
+      bottom: 10px;
       left: 0;
       z-index: 2;
-      opacity: 0.5;
+      
       display: grid;
-      grid-template-columns: 220px 1fr;
+      grid-template-columns: 300px 1fr;
     }
-    #middle #up #infoprofile1 #infoprofile3 #avainfo{
-      background-color: red;
+
+    #middle #up #infoprofile1 #infoprofile3 #nameinfo{
+      
+     
+      display: grid;
+      grid-template-rows: 1fr 90px;
       
     }
 
+    #middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo{
+        background-color: rgb(4, 0, 255);
+    }
 
-  
+
+
+
+    #middle #up #infoprofile1 #infoprofile3 #avainfo{
+      
+      display: grid;
+      grid-template-columns: 1fr  220px ;
+      
+    }
+    #middle #up #infoprofile1 #infoprofile3 #avainfo #avatar{
+      
+      display: grid;
+    }
+
+    #middle #up #infoprofile1 #infoprofile3 #avainfo #avatar #avatarimage{
+      background-color: #ffffff;
+      border-radius: 50%;
+      overflow: hidden;
+      height: 220px;
+      border: 5px solid #ffffff;
+     
+    }
+
+   .avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	
+    }
 
 
 
@@ -144,10 +178,29 @@
           <div class="block_2" id="infoprofile1">
             <div id="backprofileimage"></div>
             <div id="infoprofile2">
+                <div id="nameinfo">
 
+                </div>
             </div>
+
             <div id="infoprofile3">
-              <div id="avainfo"></div>
+
+              <div id="avainfo">
+                <div id="avainfo2"></div>
+                <div id="avatar">
+                  <div id="avatarimage">
+                    <img class="avatar" src="ava.png">
+                  </div>
+                </div>
+              </div>
+
+              <div id="nameinfo">
+                <div id="upnameinfo"></div>
+                <div id="downnameinfo">
+
+                </div>
+              </div>
+
             </div>
           </div>
 
