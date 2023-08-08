@@ -12,6 +12,7 @@
     }
     body {
       height: 100vh;
+      font-family: Montserrat, sans-serif;
     }
 
     .container {
@@ -122,8 +123,34 @@
     }
 
     #middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo{
-        background-color: rgb(4, 0, 255);
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
+
+    #middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #userinfo{
+      
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    #middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #userinfo #username{
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .biouser {
+      overflow: hidden;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .biouser span {
+      color:rgb(34, 0, 0);
+    }
+    .biouser span a{
+      text-decoration: none;
+      color: rgb(45, 0, 73);
+    }
+
 
 
 
@@ -197,7 +224,19 @@
               <div id="nameinfo">
                 <div id="upnameinfo"></div>
                 <div id="downnameinfo">
-
+                    <div id="userinfo">
+                      <div id="username">
+                        <div class = "biouser"><span>Name Surname</span></div>
+                      </div>
+                      <div  id="nickname">
+                        <div class = "biouser"><span>Nickname</span></div>
+                      </div>
+                      <div  id="email">
+                        <div class = "biouser"><span><a href="#">Email@gmail.com</a></span></div>
+                      </div>
+                    </div>
+                    <div id="nameifo_func"></div>
+                    <div ></div>
                 </div>
               </div>
 
