@@ -91,14 +91,30 @@
       background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
       height: 100%;
     }
-    #infoprofile2{
+    #middle #up #infoprofile1 #infoprofile2{
       background-color: rgb(73, 26, 134);
       width: 100%;
-  height: 100px;
+      height: 100px;
       position: absolute;
       bottom: 0;
       left: 0;
-      z-index: 10;
+      z-index: 1;
+    }
+    #middle #up #infoprofile1 #infoprofile3{
+      background-color: #dce1e6;
+      position: absolute;
+      width: 100%;
+      height: 220px;
+      bottom: 25px;
+      left: 0;
+      z-index: 2;
+      opacity: 0.5;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+    #middle #up #infoprofile1 #infoprofile3 #avainfo{
+      background-color: red;
+      
     }
 
 
@@ -130,7 +146,9 @@
             <div id="infoprofile2">
 
             </div>
-
+            <div id="infoprofile3">
+              <div id="avainfo"></div>
+            </div>
           </div>
 
         </div>
