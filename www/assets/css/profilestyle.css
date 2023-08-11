@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  font-family: Montserrat, sans-serif;
+}
+
+/*cтраница*/
+.container {
+  background-color: #edeef0;
+  height: 100%;
+}
+
+
+/*хедер*/
+.header {
+  background-color:#ffffff;
+  border-bottom: 1px solid #dce1e6;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 11;
+}
+.underheader {
+  background-color:#ffffff;
+  border-bottom: 1px solid #dce1e6;
+  height: 60px;
+  width: 100%;
+}
+
+/*вертикальные блоки*/
+.content{
+  background-color: #edeef0;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1200px 1fr;
+  
+}
+.content .vertical{
+  background-color: #edeef0;
+  height: 100%;
+}
+.content #middle{
+  background-color: #edeef0;
+  display: grid;
+  grid-template-rows: 400px 1fr;
+  grid-gap: 20px;
+  
+}
+
+
+/*горизонтальные внутренние блоки первого уровня вложенности*/
+.block_1{
+  background-color: #edeef0;
+  display: grid;
+}
+#middle #up{
+
+  padding: 20px 20px 0 20px;
+}
+#middle #lowerdouble{
+  grid-template-columns: 710px 1fr;
+  grid-gap: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+/*блок второго уровня и верхний блок информации о профиле*/
+.block_2{
+  background-color: #fff;
+  border: 1px solid #dce1e6;
+  border-radius: 50px;
+}
+
+#middle #up #infoprofile1{
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#middle #up #infoprofile1 #backprofileimage{
+  background-color: rgb(73, 26, 134);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+  height: 100%;
+}
+#middle #up #infoprofile1 #infoprofile2{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+#middle #up #infoprofile1 #infoprofile3{
+  
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  bottom: 10px;
+  left: 0;
+  z-index: 2;
+  
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+#middle #up #infoprofile1 #infoprofile3 #nameinfo{
+  
+ 
+  display: grid;
+  grid-template-rows: 1fr 90px;
+  
+}
+
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #userinfo{
+  
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #userinfo #username{
+  font-weight: 700;
+  font-size: 20px;
+}
+#middle #up #infoprofile1 #infoprofile3 #avainfo{
+  
+  display: grid;
+  grid-template-columns: 1fr  220px ;
+  
+}
+#middle #up #infoprofile1 #infoprofile3 #avainfo #avatar{
+  
+  display: grid;
+}
+
+#middle #up #infoprofile1 #infoprofile3 #avainfo #avatar #avatarimage{
+  background-color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 220px;
+  border: 5px solid #ffffff;
+ 
+}
+/*картинка авы*/
+.avatar{
+width: 100%;
+height: 100%;
+object-fit: cover;	
+}
+/*текст в профиле в верхем блоке*/
+.text_profile {
+  overflow: hidden;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.text_profile span {
+  color:rgb(34, 0, 0);
+}
+.text_profile span a{
+  text-decoration: none;
+  color: rgb(45, 0, 73);
+}
+
+
+/*нижний блок с записями*/
+#middle #lowerdouble #mynotes{
+  overflow: hidden;
+  padding: 30px;
+  display: grid;
+}
+#middle #lowerdouble #mynotes #post_container{
+ 
+  display: grid;
+  grid-template-rows: 70px 30px 1fr;
+  
+}
+#middle #lowerdouble #mynotes #post_container #createpost_container{
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  margin-bottom: 10px;
+}
+#middle #lowerdouble #mynotes #post_container #createpost_container #textarea_container{
+  display: flex;	
+  justify-content: center;
+  
+}
+#middle #lowerdouble #mynotes #post_container #createpost_container #button_container{
+  display: flex;	
+  justify-content: center;
+  
+  padding: 10px;
+}
+#middle #lowerdouble #mynotes #post_container #posts_header{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-top: 1px solid black;
+  
+}
+
+#middle #lowerdouble #mynotes #post_container #posts{
+  border: 1px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+}
+
+.header_name{
+  text-align: center;
+
+}
+.btn1{
+background-color: #4800d7;
+color: #ffffff;
+border: none;
+width: 100%;
+border-radius: 5px;
+cursor: pointer;
+}
+.ta1{
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 15px;
+padding: 15px;
+resize: none;
+}
+
+/*посты*/
+
+#post{
+  border: 1px solid black;
+}
+#post #post_content{
+  border-bottom: 1px dotted black;
+}
