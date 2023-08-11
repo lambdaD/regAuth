@@ -78,7 +78,6 @@ body {
   display: grid;
 }
 #middle #up{
-
   padding: 20px 20px 0 20px;
 }
 #middle #lowerdouble{
@@ -95,7 +94,7 @@ body {
 }
 
 #middle #up #infoprofile1{
-  
+  background-color: rgb(73, 26, 134);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -103,10 +102,68 @@ body {
 }
 
 #middle #up #infoprofile1 #backprofileimage{
-  background-color: rgb(73, 26, 134);
+  
   background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
-  height: 100%;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
 }
+#middle #up #infoprofile1 #backprofileimage #background_buttons {
+  
+  display: grid;
+  padding: 20px 30px 30px 0;
+  
+}
+
+
+#middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons {
+
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  
+}
+
+
+
+#middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons #btn_back_container {
+  display: flex;
+  justify-content: center;
+
+ 
+  padding: 10px 20px 10px 0;
+}
+
+
+#infoprofile1:hover .transparent-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.transparent-button {
+  background-color: #0000004a;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.transparent-button img {
+  filter: invert(1);
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 10px;
+}
+
+.transparent-button span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+
 #middle #up #infoprofile1 #infoprofile2{
   background-color: #ffffff;
   width: 100%;

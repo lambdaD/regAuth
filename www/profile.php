@@ -32,7 +32,19 @@ if (!$_SESSION[user]) {
     <div class="vertical" id="middle">
       <div class="block_1" id="up">
         <div class="block_2" id="infoprofile1">
-          <div id="backprofileimage"></div>
+          <div id="backprofileimage">
+            <div id="leftbackground_buttons"></div>
+            <div id="background_buttons">
+              <div id="inner_background_buttons">
+                <div id="btn_back_container">
+                  <button class="transparent-button">
+                    <img src="assets/icons/icon-pencil.png" alt="">
+                    <span>Сменить фон</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id="infoprofile2">
             <div id="nameinfo"></div>
           </div>
