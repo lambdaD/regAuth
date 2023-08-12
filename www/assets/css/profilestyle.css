@@ -44,10 +44,11 @@ body {
 }
 .ext_btn{
   width: 100%;
-  background-color: #191919c2;
+  background-color: #dcdcdcc2;
   border: 2px solid #e21212;
   color: #e21212;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 
