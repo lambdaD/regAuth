@@ -127,7 +127,7 @@ body {
 #middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons {
 
   display: grid;
-  grid-template-rows: 50px 50px 1fr;
+  grid-template-rows: 50px 150px 1fr;
   
 }
 
@@ -136,12 +136,18 @@ body {
 #middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons .btn_back_container {
   display: flex;
   justify-content: center;
-
+  
  
   padding: 10px 20px 10px 0;
 }
 
 
+
+
+
+
+
+/*невидимое кнопко на верхнем фоне*/
 #infoprofile1:hover .transparent-button {
   transition: .3s;
   opacity: 1;
@@ -171,6 +177,22 @@ body {
   color: #ffffff;
   font-size: 14px;
 }
+
+/*нижние невидимые кнопки*/
+#middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons #underbuttonback{
+  background-color: #cdcdcd86;
+  border-radius: 15px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+#middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons #underbuttonback .underbtn_back_container{
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+/**/
+
 
 
 #middle #up #infoprofile1 #infoprofile2{
@@ -209,6 +231,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
+/*юзер инфа*/
 #middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #userinfo{
   
   display: grid;
@@ -218,6 +241,53 @@ body {
   font-weight: 700;
   font-size: 20px;
 }
+
+/*карма*/
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #karmainfo{
+
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+}
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #karmainfo #karma_container{
+  background-color: #dfdfdf;
+  width: 75%;
+  margin: 10px 0 10px 10%;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor:pointer;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  overflow: hidden;
+}
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #karmainfo #karma_container #karma_image{
+  display: flex;
+  justify-content: center;
+
+  padding: 25px 0;
+}
+#karma_image #image{
+  width: 30px;
+  height: 30px;
+}
+#karma_image img{
+  width: 30px;
+  height: 30px;
+}
+
+#middle #up #infoprofile1 #infoprofile3 #nameinfo #downnameinfo #karmainfo #karma_container #karma_count{
+  display: flex;
+  justify-content: left;
+  padding: 25px 0;
+  overflow-x: scroll;
+}
+#karma_count p{
+  font-size: 25px;
+}
+
+
+
+
 #middle #up #infoprofile1 #infoprofile3 #avainfo{
   
   display: grid;

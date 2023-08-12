@@ -1,5 +1,6 @@
 <?php
-session_start();
+  session_start();
+  require_once('vendor/connect.php');
 if (!$_SESSION[user]) {
   header("Location: index.php");
 }
@@ -42,17 +43,32 @@ if (!$_SESSION[user]) {
                     <span>Сменить фон</span>
                   </button>
                 </div>
-                <div class="btn_back_container">
-                  <button class="transparent-button">
-                    <img src="assets/icons/icon-pencil.png" alt="">
-                    <span>Удалить фон</span>
-                  </button>
+                <div id="underbuttonback">
+                  <div class="underbtn_back_container">
+                    <button  class="transparent-button" >
+                      <img src="assets/icons/icon-pencil.png" alt="">
+                      <span>Загрузить</span>
+                    </button>
+                  </div>
+                  <div class="underbtn_back_container">
+                    <button class="transparent-button">
+                      <img src="assets/icons/icon-pencil.png" alt="">
+                      <span>Обрезать</span>
+                    </button>
+                  </div>
+                  <div class="underbtn_back_container">
+                    <button class="transparent-button">
+                      <img src="assets/icons/icon-pencil.png" alt="">
+                      <span>Удалить</span>
+                    </button>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
           <div id="infoprofile2">
-            <div id="nameinfo"></div>
+            
           </div>
 
           <div id="infoprofile3">
@@ -83,8 +99,26 @@ if (!$_SESSION[user]) {
                     </div>
                   </div>
                 </div>
-                <div id="nameifo_func"></div>
-                <div></div>
+                <div id="nameinfo_func"></div>
+                <div id="karmainfo">
+                  <div id="karma_container">
+                    
+                    <div id="karma_image">
+                      <div id="image"><img src="assets/icons/icon-usd.png" alt="" /></div>
+                    </div>
+<?php
+  $user_id = $_SESSION["user"]["id"];
+  $infoUser = mysqli_query($connect, "SELECT * FROM `profileinfo` WHERE `user_id` = '$user_id'");
+  $infoUserFetch = mysqli_fetch_assoc($infoUser);
+  $_SESSION['infouser']  = array(
+    "user_id" => $infoUserFetch['user_id'],
+    "karma" => $infoUserFetch['karma']
+  );
+
+?>
+                    <div id="karma_count"><p><?=$_SESSION['infouser']['karma']?></p></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -104,7 +138,7 @@ if (!$_SESSION[user]) {
             </form>
 
 <?php
-  require_once('vendor/connect.php');
+  
   $user_id = $_SESSION["user"]["id"];
   $post = mysqli_query($connect, "SELECT * FROM `posts` WHERE `user_id` = '$user_id' ORDER BY `created_at` DESC");
 
