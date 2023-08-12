@@ -36,10 +36,16 @@ if (!$_SESSION[user]) {
             <div id="leftbackground_buttons"></div>
             <div id="background_buttons">
               <div id="inner_background_buttons">
-                <div id="btn_back_container">
+                <div class="btn_back_container">
                   <button class="transparent-button">
                     <img src="assets/icons/icon-pencil.png" alt="">
                     <span>Сменить фон</span>
+                  </button>
+                </div>
+                <div class="btn_back_container">
+                  <button class="transparent-button">
+                    <img src="assets/icons/icon-pencil.png" alt="">
+                    <span>Удалить фон</span>
                   </button>
                 </div>
               </div>

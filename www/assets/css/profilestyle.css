@@ -51,6 +51,13 @@ body {
   cursor: pointer;
 }
 
+.ext_btn:hover{
+  transition: .3s;
+  background-color: #e27171c2;
+
+}
+
+
 
 /*вертикальные блоки*/
 .content{
@@ -120,13 +127,13 @@ body {
 #middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons {
 
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 50px 50px 1fr;
   
 }
 
 
 
-#middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons #btn_back_container {
+#middle #up #infoprofile1 #backprofileimage #background_buttons #inner_background_buttons .btn_back_container {
   display: flex;
   justify-content: center;
 
@@ -136,6 +143,7 @@ body {
 
 
 #infoprofile1:hover .transparent-button {
+  transition: .3s;
   opacity: 1;
   pointer-events: auto;
 }
